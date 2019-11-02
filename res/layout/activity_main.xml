@@ -1,0 +1,206 @@
+<!--
+ | Copyright Istvan Chung and Husayn Karimi.
+ |
+ | This file is part of ChessSave.
+ |
+ | ChessSave is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU General Public License as published by
+ | the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | ChessSave is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU General Public License for more details.
+ |
+ | You should have received a copy of the GNU General Public License
+ | along with ChessSave.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <org.twodumpling.fenconverter.Chessboard
+        android:id="@+id/chessboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chessboard" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="6" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/whiteKing"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u2654"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/whiteQueen"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u2655"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/whiteRook"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u2656"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/whiteBishop"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u2657"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/whiteKnight"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u2658"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/whitePawn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u2659"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:onClick="onPieceButtonClicked" >
+
+                <Button
+                    android:id="@+id/blackKing"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u265A"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/blackQueen"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u265B"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/blackRook"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u265C"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/blackBishop"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u265D"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/blackKnight"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u265E"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/blackPawn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onPieceButtonClicked"
+                    android:text="\u265F"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/removePiece"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="onPieceButtonClicked"
+            android:text="@string/cancelButtonText" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/tomove_switch" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/importButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onImportClicked"
+            android:text="@string/importButton" />
+
+        <Button
+            android:id="@+id/exportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onExportClicked"
+            android:text="@string/exportButton" />
+    </LinearLayout>
+
+</LinearLayout>

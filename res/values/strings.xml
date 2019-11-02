@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ | Copyright Istvan Chung and Husayn Karimi.
+ |
+ | This file is part of ChessSave.
+ |
+ | ChessSave is free software: you can redistribute it and/or modify
+ | it under the terms of the GNU General Public License as published by
+ | the Free Software Foundation, either version 3 of the License, or
+ | (at your option) any later version.
+ |
+ | ChessSave is distributed in the hope that it will be useful,
+ | but WITHOUT ANY WARRANTY; without even the implied warranty of
+ | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ | GNU General Public License for more details.
+ |
+ | You should have received a copy of the GNU General Public License
+ | along with ChessSave.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+
+    <string name="app_name">ChessSave</string>
+    <string name="cancelButtonText">X</string>
+    <string name="importButton">Import</string>
+    <string name="exportButton">Export</string>
+    <string name="import_position">Import position</string>
+    <string name="cancel">Cancel</string>
+    <string name="export_position">Export position</string>
+    <string name="copy">Copy</string>
+    <string name="text_copied_to_clipboard">Text copied to clipboard</string>
+    <string name="done">Done</string>
+    <string name="imported">Imported</string>
+    <string name="f_imported">Imported %s</string>
+    <string name="enter">Enter</string>
+    <string name="to_move">To move:</string>
+    <string name="load">Open</string>
+    <string name="white">white</string>
+    <string name="black">black</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="clear_board">Clear board</string>
+    <string name="delete_saved">Delete file</string>
+    <string name="delete">Delete</string>
+    <string name="f_saved">Saved %s</string>
+    <string name="f_deleted">Deleted %s</string>
+    <string name="no_saved_files">No saved files</string>
+    <string name="copy_fen">Copy FEN</string>
+    <string name="save_to_file">Save to file</string>
+    <string name="paste_fen">Paste FEN</string>
+    <string name="load_file">Load file</string>
+    <string name="invalid_fen">Invalid FEN</string>
+    <string name="about">About</string>
+    <string name="show_license">Show license</string>
+    <string name="license">License</string>
+    <string name="readme">ChessSave Copyright 2013 Istvan Chung and Husayn Karimi.\n
+		\n
+		ChessSave is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.\n
+		\n
+		ChessSave is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.\n
+		\n
+		You should have received a copy of the GNU General Public License
+		along with ChessSave.  If not, see http://www.gnu.org/licenses/.</string>
+    <string name="setup_board">Set up board</string>
+
+</resources>
